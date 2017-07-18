@@ -65,6 +65,15 @@
 /* $$.ix [SVMSG_MODE]~constant,~definition~of$$ */
 #define	SVSEM_MODE	(SEM_R | SEM_A | SEM_R>>3 | SEM_R>>6)
 					/* default permissions for new SV semaphores */
+
+#ifndef SHM_R 
+#define SHM_R S_IRUSR 
+#endif
+
+#ifndef SHM_W 
+#define SHM_W S_IWUSR 
+#endif
+
 /* $$.ix [SVSEM_MODE]~constant,~definition~of$$ */
 #define	SVSHM_MODE	(SHM_R | SHM_W | SHM_R>>3 | SHM_R>>6)
 					/* default permissions for new SV shared memory */
