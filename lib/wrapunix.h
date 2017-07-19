@@ -181,6 +181,11 @@ void     Sigfillset(sigset_t *);
 int      Sigismember(const sigset_t *, int);
 void     Sigpending(sigset_t *);
 void     Sigprocmask(int, const sigset_t *, sigset_t *);
+
+#ifdef	HAVE_SIGINFO_T_STRUCT
+void	 Sigqueue(pid_t, int, const union sigval);
+#endif
+
 char    *Strdup(const char *);
 long     Sysconf(int);
 void     Sysctl(int *, u_int, void *, size_t *, void *, size_t);
@@ -191,6 +196,7 @@ void     Write(int, void *, size_t);
 long     Pathconf(const char *pathname, int name);
 int		 Select(int, fd_set *, fd_set *, fd_set *, struct timeval *);
 void     Sigwait(const sigset_t *set, int *signo);
+void	 Stat(const char *, struct stat *);
 
 /* Define to 1 if you have the `mkstemp' function. */
 #define HAVE_MKSTEMP 1
