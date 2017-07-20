@@ -190,6 +190,7 @@ char    *Strdup(const char *);
 long     Sysconf(int);
 void     Sysctl(int *, u_int, void *, size_t *, void *, size_t);
 void     Unlink(const char *);
+void	*Valloc(size_t);
 pid_t    Wait(int *);
 pid_t    Waitpid(pid_t, int *, int);
 void     Write(int, void *, size_t);
