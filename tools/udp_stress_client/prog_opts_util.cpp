@@ -33,6 +33,11 @@ variables_map Parse_command_line(int argc, char *argv[])
         store(parse_config_file(ifs, desc, true), vm);
     }
 
+    if (vm.count("help")) {
+        cout << desc << endl;
+        exit(1);
+    }
+
     return vm;
 }
 
