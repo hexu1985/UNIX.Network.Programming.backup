@@ -8,7 +8,7 @@ PROGS =	daytimetcpcli daytimetcpcli1 daytimetcpsrv1 daytimetcpsrv2 \
 		daytimetcpsrv3 daytimetcpsrv4 \
 		daytimeudpcli1 daytimetcpcli2 daytimetcpcli3 \
 		daytimeudpcli2 daytimeudpsrv2 daytimeudpsrv3 \
-		hostent hostent2 hostent3 \
+		hostent hostent2 hostent3 hostent4 \
 		netent prmyaddrs prmyaddrs1 test1 \
 		tcpcli01 tcpservepoll01 udpcli01 udpcli02 udpcli03 udpserv01
 
@@ -59,6 +59,9 @@ hostent2:	hostent2.o
 
 hostent3:	hostent3.o
 		${CC} ${CFLAGS} -o $@ hostent3.o ${LIBS}
+
+hostent4:	hostent4.o
+		${CC} ${CFLAGS} -o $@ hostent4.o ${LIBS}
 
 netent:	netent.o
 		${CC} ${CFLAGS} -o $@ netent.o ${LIBS}
