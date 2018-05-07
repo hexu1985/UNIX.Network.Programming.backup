@@ -6,8 +6,11 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <signal.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 
 #include "error.h"
+#include "pathalloc.h"
 
 /*
  * Default file access permissions for new files.
