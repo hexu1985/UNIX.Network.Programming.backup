@@ -8,6 +8,7 @@
 #include <signal.h>
 #include <sys/stat.h>
 #include <sys/types.h>
+#include <fcntl.h>
 
 #include "error.h"
 #include "pathalloc.h"

@@ -4,7 +4,7 @@ INCLUDE = -I../../lib/
 CFLAGS = -Wall -g -O2 ${INCLUDE}
 LDLIBS = ../../lib/libapue.a
 
-PROGS =	fileflags hole mycat seek
+PROGS =	fileflags hole mycat seek filesize
 
 all:	$(PROGS) setfl.o
 
