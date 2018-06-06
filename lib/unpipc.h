@@ -22,7 +22,6 @@
 #include "timing.h"
 #include "tv_sub.h"
 #include "wrappthread.h"
-#include "wrapsunrpc.h"
 #include "wrapstdio.h"
 #include "wrapunix.h"
 #include "writable_timeo.h"

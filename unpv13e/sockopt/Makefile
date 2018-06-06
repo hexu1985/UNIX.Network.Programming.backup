@@ -24,4 +24,4 @@ rcvbufset:	rcvbufset.o
 		${CC} ${CFLAGS} -o $@ rcvbufset.o ${LIBS}
 
 clean:
-		rm -f ${PROGS} ${CLEANFILES}
+		rm -f ${PROGS} ${CLEANFILES} *.o
