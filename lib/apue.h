@@ -12,6 +12,7 @@
 
 #include "error.h"
 #include "pathalloc.h"
+#include "prmask.h"
 
 /*
  * Default file access permissions for new files.
