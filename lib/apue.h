@@ -10,7 +10,7 @@
 #include <sys/types.h>
 #include <fcntl.h>
 
-#include "error.h"
+#include "error_apue.h"
 #include "pathalloc.h"
 #include "prmask.h"
 
